@@ -6,84 +6,111 @@
     <title>Deals - Campus Bites</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
-<body>
-    <header>
-        <h1>Campus Bites</h1>
-        <nav>
+<body class="deals-page">
+    <header class="deal-header">
+        <div class="deal-brand">Campus Bites</div>
+        <nav class="deal-nav">
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
-            <a href="deals.html">Deals</a>
+            <a href="deals.html" class="active">Deals</a>
             <a href="order.html">How to Order</a>
             <a href="feedback.html">Feedback</a>
         </nav>
     </header>
 
-    <main>
-        <h2>Daily Specials &amp; Combo Deals</h2>
-        <p>Save money on your meals with our daily special and combo deals. All prices are in PKR and available during cafeteria opening hours.</p>
+    <section class="deal-hero">
+        <h1>Daily Specials &amp; Combo Deals</h1>
+        <p>Great food, better prices. Grab a deal and save on every meal at Campus Bites.</p>
+    </section>
 
+    <main class="deal-container">
         <section class="deal-special">
-            <h3>Today's Special</h3>
-            <p class="deal-name">Chicken Biryani with Raita</p>
-            <p>A full plate of chicken biryani served with raita and a salad.</p>
-            <p class="deal-price">PKR 280 <span class="deal-old-price">PKR 350</span></p>
-            <p class="deal-note">Available from 12:00 PM until sold out.</p>
+            <div class="deal-special-text">
+                <span class="deal-badge">Today's Special</span>
+                <h2>Chicken Biryani with Raita</h2>
+                <p>A full plate of fragrant chicken biryani served with cool raita and a fresh salad.</p>
+                <p class="deal-time">Available from 12:00 PM until sold out</p>
+            </div>
+            <div class="deal-special-price">
+                <span class="deal-old-price">PKR 350</span>
+                <span class="deal-new-price">PKR 280</span>
+                <span class="deal-save">Save PKR 70</span>
+            </div>
         </section>
 
-        <h3>Combo Deals</h3>
-        <div class="deal-list">
-            <article class="deal-card">
-                <h4>Student Combo</h4>
+        <h2 class="deal-heading">Combo Deals</h2>
+        <div class="deal-grid">
+            <article class="deal-card deal-featured">
+                <span class="deal-tag">Best Value</span>
+                <h3>Student Combo</h3>
                 <ul>
                     <li>Zinger Burger</li>
                     <li>Regular Fries</li>
                     <li>Soft Drink (300 ml)</li>
                 </ul>
-                <p class="deal-price">PKR 450</p>
+                <div class="deal-card-footer">
+                    <span class="deal-old-price">PKR 550</span>
+                    <span class="deal-new-price">PKR 450</span>
+                    <span class="deal-save">Save PKR 100</span>
+                </div>
             </article>
 
             <article class="deal-card">
-                <h4>Lunch Combo</h4>
+                <h3>Lunch Combo</h3>
                 <ul>
                     <li>Chicken Karahi (half plate)</li>
                     <li>2 Tandoori Rotis</li>
                     <li>Salad and Raita</li>
                     <li>Bottled Water</li>
                 </ul>
-                <p class="deal-price">PKR 550</p>
+                <div class="deal-card-footer">
+                    <span class="deal-old-price">PKR 650</span>
+                    <span class="deal-new-price">PKR 550</span>
+                    <span class="deal-save">Save PKR 100</span>
+                </div>
             </article>
 
             <article class="deal-card">
-                <h4>Breakfast Combo</h4>
+                <h3>Breakfast Combo</h3>
                 <ul>
                     <li>Aloo Paratha</li>
                     <li>Omelette</li>
                     <li>Cup of Tea</li>
                 </ul>
-                <p class="deal-price">PKR 300</p>
+                <div class="deal-card-footer">
+                    <span class="deal-old-price">PKR 350</span>
+                    <span class="deal-new-price">PKR 300</span>
+                    <span class="deal-save">Save PKR 50</span>
+                </div>
             </article>
 
             <article class="deal-card">
-                <h4>Snack Combo</h4>
+                <h3>Snack Combo</h3>
                 <ul>
                     <li>Chicken Samosa (2 pieces)</li>
                     <li>Chicken Sandwich</li>
                     <li>Cold Coffee</li>
                 </ul>
-                <p class="deal-price">PKR 380</p>
+                <div class="deal-card-footer">
+                    <span class="deal-old-price">PKR 480</span>
+                    <span class="deal-new-price">PKR 380</span>
+                    <span class="deal-save">Save PKR 100</span>
+                </div>
             </article>
         </div>
 
-        <h3>Deal Terms</h3>
-        <ul class="deal-terms">
-            <li>Deals cannot be combined with each other.</li>
-            <li>Prices include tax.</li>
-            <li>Student ID card must be shown at the counter.</li>
-            <li>Deals may change without prior notice.</li>
-        </ul>
+        <section class="deal-terms">
+            <h2>Deal Terms</h2>
+            <ul>
+                <li>Deals cannot be combined with each other.</li>
+                <li>Prices include tax.</li>
+                <li>Student ID card must be shown at the counter.</li>
+                <li>Deals may change without prior notice.</li>
+            </ul>
+        </section>
     </main>
 
-    <footer>
+    <footer class="deal-footer">
         <p>&copy; 2026 Campus Bites, University of Central Punjab</p>
     </footer>
 </body>
