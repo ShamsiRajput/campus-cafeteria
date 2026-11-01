@@ -1,1 +1,74 @@
 
+
+.deal-special {
+    background-color: #fff3cd;
+    border: 1px solid #e0c36a;
+    padding: 15px 20px;
+    margin: 20px 0;
+}
+
+.deal-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.deal-price {
+    font-weight: bold;
+    color: #b22222;
+    font-size: 1.1em;
+}
+
+.deal-old-price {
+    color: #777777;
+    text-decoration: line-through;
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+.deal-note {
+    font-size: 0.9em;
+    color: #555555;
+}
+
+.deal-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.deal-card {
+    box-sizing: border-box;
+    flex: 1 1 22%;
+    min-width: 200px;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.deal-card h4 {
+    margin-top: 0;
+}
+
+.deal-card ul {
+    padding-left: 20px;
+}
+
+.deal-terms li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .deal-list {
+        flex-direction: column;
+    }
+
+    .deal-card {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+
+    .deal-special {
+        padding: 10px 12px;
+    }
+}
