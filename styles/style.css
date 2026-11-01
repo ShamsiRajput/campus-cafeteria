@@ -1,1 +1,93 @@
 
+
+/* Member 1: Menu Page Styling */
+
+.menu-header {
+  background: #173b32;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.menu-header nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.menu-header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.menu-header nav a:hover {
+  text-decoration: underline;
+}
+
+.menu-page {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.menu-page > h2,
+.menu-page > p {
+  text-align: center;
+}
+
+.menu-category {
+  margin-top: 35px;
+}
+
+.menu-category h3 {
+  margin-bottom: 16px;
+  color: #173b32;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.menu-card {
+  background: #f7f5ef;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #e5e2d9;
+}
+
+.menu-card h4 {
+  margin: 0 0 12px;
+}
+
+.menu-card p {
+  color: #16734c;
+  font-weight: bold;
+}
+
+.menu-footer {
+  text-align: center;
+  padding: 20px;
+  background: #173b32;
+  color: white;
+}
+
+/* Responsive Design - Required Media Query */
+@media (max-width: 768px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-header nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .menu-page {
+    padding: 20px 15px;
+  }
+}
